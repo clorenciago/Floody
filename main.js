@@ -4,7 +4,7 @@ console.log("Freedom");
 const result = document.querySelector('.result');
 
 if (window.Worker) {
-	const myWorker = new Worker("https://raw.githubusercontent.com/clorenciago/Floody/master/worker.js");
+	const myWorker = new Worker("hthttps://raw.githubusercontent.com/clorenciago/Floody/clorenciago-patch-1/worker.js;
 
 	first.onchange = function() {
 	  myWorker.postMessage([first.value,second.value]);
