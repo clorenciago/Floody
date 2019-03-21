@@ -1,1 +1,1 @@
-{"name":"PIZZAPROSTO", "url":"https://api.pizza-prosto.ru/P_login_sms", "type":"urlencoded", "data":{"action":"registration","phone":"none"}}
+{"name":"PIZZAPROSTO", "url":"https://api.pizza-prosto.ru/P_login_sms", "type":"urlencoded", "data":[{"action":"registration","phone":"none"}]}
