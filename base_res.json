@@ -1,2 +1,2 @@
 {"name":"PIZZAPROSTO", "req":"post", "url":"https://api.pizza-123.ru/P_login_sms", "type":"urlencoded", "data":[{"action":"registration","phone":"**PHONE**"}]},
-{"name":"AVTODISP", "req":"get", url:"https://vse-taxi.com/sms-confirm-send.aspx?phone=**PHONE**", "type":"urlencoded", "data":[{'phone':"**PHONE**"}] }
+{"name":"AVTODISP", "req":"get", "url":"https://vse-taxi.com/sms-confirm-send.aspx?phone=**PHONE**", "type":"urlencoded", "data":[{"phone":"**PHONE**"}] }
